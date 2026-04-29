@@ -2,13 +2,13 @@ Automação com Selenium e Outlook
 
 Este repositório contém dois scripts em Python que automatizam tarefas comuns: abertura de chamados em sistema interno via Selenium e extração de anexos PDF de e-mails no Outlook.
 
-📌 Código 1: Automação de Chamados com Selenium
+📌Sistemas de Chamados Corp: Automação de Chamados com Selenium
 
 Este script utiliza Selenium WebDriver e Pandas para automatizar o processo de abertura de chamados em um sistema interno.
 
 Funcionalidades
 
-Carrega dados de um arquivo CSV (chamados.csv).
+Carrega dados de um arquivo CSV (chamados.csv). <- Não pode ser XLSX ou XLSM, o código puxa detalhes de informações separadas por ,(vírgula).
 
 Preenche automaticamente os campos do formulário de abertura de chamado.
 
@@ -38,7 +38,7 @@ Execute o script:
 
 python automacao_chamados.py
 
-📌 Código 2: Automação de Extração de PDFs no Outlook
+📌 Download PDF: Automação de Extração de PDFs no Outlook
 
 Este script utiliza win32com para acessar o Outlook e salvar anexos PDF de e-mails não lidos em uma pasta local.
 
@@ -50,7 +50,7 @@ Localiza uma pasta específica de e-mails (ImpressCN).
 
 Filtra mensagens não lidas.
 
-Salva anexos PDF em uma pasta local (C:\temp).
+Salva anexos PDF em uma pasta local (C:\temp). <-- Altere para pasta de preferência
 
 Marca os e-mails como lidos após o processamento.
 
@@ -73,14 +73,6 @@ Configure o nome da pasta e store do Outlook no código.
 Execute o script:
 
 python extracao_outlook.py
-
-📂 Estrutura do Repositório
-
-automacao-outlook-selenium/
-├── automacao_chamados.py
-├── extracao_outlook.py
-├── chamados.csv
-└── README.md
 
 ⚠️ Observações
 
